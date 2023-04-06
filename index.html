@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.cdnfonts.com/css/copperplate" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg"> 
+
+	<header>
+		<nav>
+			<h1><i class="fa fa-coffee" style="font-size:36px"></i> Online Coffee Store </h1>
+		  <ul>
+			<li><a href="#About">About me</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#portfolio">Sills</a></li>
+			<li><a href="#contact">Contacts</a></li>
+		  </ul>
+		</nav>
+		<h4>This is special project for <a href="https://www.redrover.school/">RedRover.SCHOOl</a></h4>
+		
+	</header>
+	<div class="main-blocks">
+		<div class="container">
+			<div class="coffee">
+				<div class="espresso-info">
+					<h2 class="name">Espresso</h2>
+					<p class="price"></p>
+					<p><i>Size:</i></p>
+					<div class="size">
+						<label for="espresso-small"><i>Small</i></label>
+						<input type="radio" name="espresso-size" id="espresso-small" value="small" checked>
+						<label for="espresso-medium"><i>Medium</i></label>
+						<input type="radio" name="espresso-size" id="espresso-medium" value="medium">
+						<label for="espresso-large"><i>Large</i></label>
+						<input type="radio" name="espresso-size" id="espresso-large" value="large">
+					</div>	
+					<button class="button" id="button-espresso" onclick="showPopup('Espresso', getCostEsp('espresso'))"> Order now</button>
+				</div>			
+				<div class="img1"></div>
+			</div>		
+			<div class="coffee">
+				<div class="capputino-info">
+					<h2 class="name">Cappuccino</h2>
+					<div class="price"> </div>
+					<p><i>Size:</i></p>
+					<div class="size">
+						<label for="cappuccino-small"><i>Small</i></label>
+						<input type="radio" name="cappuccino-size" id="cappuccino-small" value="small" checked>
+						<label for="cappuccino-medium"><i>Medium</i></label>
+						<input type="radio" name="cappuccino-size" id="cappuccino-medium" value="medium" >
+						<label for="cappuccino-large"><i>Large</i></label>
+						<input type="radio" name="cappuccino-size" id="cappuccino-large" value="large">
+					</div>
+					<p><i>Milk:</i></p>
+					<div class="milk">
+						<label for="cappuccino-whole"><i>Whole</i></label>
+						<input type="radio" name="cappuccino-milk" id="cappuccino-whole" value="whole" onclick="show1();" checked>
+						<label for="cappuccino-almond"><i>Almond</i></label>
+						<input type="radio" name="cappuccino-milk" id="cappuccino-almond" value="almond" onclick="show2();">
+						<label for="cappuccino-Oat"><i>Oat</i></label>
+						<input type="radio" name="cappuccino-milk" id="cappuccino-oat" value="oat" onclick="show3();">
+					</div>
+					
+					<button class="button" id="button-cappuccino" onclick="showPopup('Cappuccino', getCost('cappuccino'))">Order now</button>				
+				</div>
+				<div class="img2"></div>
+			</div>
+			<div class="coffee">
+				<div class="americano-info">
+					<h2 class="name">Americano</h2>
+					<p class="price"></p>
+					<p><i>Size:</i></p>
+					<div class="size">
+						<label for="americano-small"><i>Small</i></label>
+						<input type="radio" name="americano-size" id="americano-small" value="small" checked>
+						<label for="americano-medium"><i>Medium</i></label>
+						<input type="radio" name="americano-size" id="americano-medium" value="medium">
+						<label for="americano-large"><i>Large</i></label>
+						<input type="radio" name="americano-size" id="americano-large" value="large">
+					</div>
+					<p><i>Milk:</i></p>
+					<div class="milk">
+						<label for="americano-whole"><i>Whole</i></label>
+						<input type="radio" name="americano-milk" id="americano-whole" value="whole" onclick="show1();" checked>
+						<label for="americano-almond"><i>Almond</i></label>
+						<input type="radio" name="americano-milk" id="americano-almond" value="almond" onclick="show2();">
+						<label for="americano-Oat"><i>Oat</i></label>
+						<input type="radio" name="americano-milk" id="americano-oat" value="oat" onclick="show3();">
+						<label for="americano-noMilk"><i>No Milk</i></label>
+						<input type="radio" name="americano-milk" id="americano-noMilk" value="noMilk" onclick="show4();">
+					</div>
+					<button class="button" id="button-americano" onclick="showPopup('Americano', getCost('americano'))">Order now</button>
+				</div>
+				<div class="img3"></div>
+			</div>
+	</div>
+	<div>
+
+		<section>
+			<div class="container reveal">
+			  <h3 class="notic">description</h3>
+			  <p class="notic">This is a simple example of how JS is able to process the information, received 
+				from the user, and display the calculation of the cost of coffee, according to several parameters:<br> 
+				the size of the cup and the preferred type of milk. </p>
+				<p>Initial prices parameters:<br></p> 
+			
+			  <div class="text-container">
+				<div class="text-box">
+				  <h3>Espresso</h3>
+				  <p>
+					Small cup 2$<br>Medium cup 3$<br>Large cup 4$
+				  </p>
+				</div>
+				<div class="text-box">
+				  <h3>Cappuccino</h3>
+				  <p>
+					Small cup 3$<br>Medium cup 4$<br>Large cup 5$<br>
+					<br>
+					adding milk: <br><br>Whole + 0,5$<br>Almond + 1$<br>Oat + 0,5$
+				  </p>
+				</div>
+				<div class="text-box">
+				  <h3>Americano</h3>
+				  <p>
+					Small cup 3$<br>Medium cup 4$<br>Large cup 5$<br>
+					<br>
+					adding milk: <br><br>No milk + 0$<br>Whole + 0,5$<br>Almond + 1$<br>Oat + 0,5$
+				  </p>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  
+    <div id="About">
+		<div class="container1">
+		  <h1>About me</h1>
+		  <p>Hello World! My name is Teymur, and I'm a passionate web developer with 3 months of experience under my belt. <br>
+			 I'm thrilled to be a part of the fast-paced and constantly evolving world of web development.
+			My passion for web development stems from my desire to create websites that not only look great but are also highly functional and user-friendly. <br><br>
+			I believe that a website's design should be both aesthetically pleasing and intuitive, making it easy for users to navigate and find what they're looking for.
+			<br><br>I have a basic skillset in programming languages such as Java and JavaScript, as well as HTML and CSS. I'm always eager to learn new things and expand my knowledge in these areas, as I believe that staying up to date with the latest technologies and trends is essential in the field of web development.
+			<br><br>When I'm not coding, you can find me in music studio, I'm a professional saxophone player and music creator. I believe that maintaining a healthy work and creativity life balance is crucial to my success as a developer since a broad creative outlook opens up new talents in each of us.
+			<br>I'm excited to see where my career in web development takes me, and I can't wait to continue honing my skills and creating websites that make a positive impact on users.</p>
+		</div>
+	  </div>
+	</div>	  
+	  <div id="services">
+		<div class="container2">
+		  <h1>Servises</h1>
+		  <ul>
+			<li><a href="https://webdesigner.withgoogle.com/">Website Design</a></li>
+			<li><a href="https://developers.google.com/web">Website Development</a></li>
+			<li><a href="https://developer.android.com/">Mobile App Development</a></li>
+			<li><a href="https://grow.google/certificates/ux-design/#?modal_active=none">UI/UX Design</a></li>
+		  </ul>
+		</div>
+	  </div>
+	  <div>
+	  <section id="portfolio">
+		<div class="container3">
+			<h2>Skills</h2>
+			<div class="gallery">
+			  <div class="card">
+				<img src="https://cdn.ready-market.com/106/e3608484//Templates/pic/qa%20and%20qc%20testing.jpg?v=e1ee26e3" alt="Project 1">
+				<div class="card-content">
+				  <h3>QA / QC experience</h3>
+				  <p>
+					In-depth knowledge in the field of ensuring that products and services meet high quality standards, identifying problems and recommending solutions.</p>
+				</div>
+			  </div>
+
+			  <div class="card">
+				<img src="https://www.onpathtesting.com/hs-fs/hubfs/agile%20testing%20pyramid%20onpath%20testing%20QA.png?width=3891&name=agile%20testing%20pyramid%20onpath%20testing%20QA.png" alt="Project 2">
+				<div class="card-content">
+				  <h3>Automation / Manual testing</h3>
+				  <p>Strong knowledge of developing and executing test plans, developing and maintaining test cases, analyzing complex systems to identify potential problems.
+					Expert in using testing tools and frameworks, such as Selenium and TestNG.</p>
+				</div>
+			  </div>
+			  
+			  <div class="card">
+				<img src="https://www.datasunrise.com/wp-content/uploads/2018/07/MS-SQL-Server-Database-Firewall.jpg" alt="Project 3">
+				<div class="card-content">
+				  <h3>Programming languages and Vesion control</h3>
+				  <p>Able to develop and maintain dynamic web applications in JavaScript,
+					develop and maintain applications using Java.
+					Skills in using SQL to create, manage, and query relational databases.
+					Able to create and design web pages and user interfaces in HTML/CSS.
+					Able to work collaboratively with other developers using code repositories such as Git/GitHub.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  </section>
+	</div>
+
+	  <div id="contact">
+		<div class="container4">
+			<h1>Contacts</h1>
+			<a class ="social-icon" href="mailto:timberhutvk@gmail.com"><ion-icon name="mail-outline" size="large"></ion-icon></a>
+			<a class ="social-icon" href="https://www.instagram.com/timbersax/?hl=en"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
+			<a class ="social-icon" href="https://www.linkedin.com/in/tim-koff-053144238/"><ion-icon name="logo-linkedin" size="large"></ion-icon></a>
+			<a class ="social-icon" href="https://github.com/timberhut"><ion-icon name="logo-github" size="large"></ion-icon></a>
+			<a class ="social-icon" href="https://discord.gg/dA84SnWv"><ion-icon name="logo-discord" size="large"></ion-icon></a>
+			<a class ="social-icon" href="https://www.youtube.com/@brightfuture_timbersax"><ion-icon name="logo-youtube" size="large"></ion-icon></a>
+			</div>
+	  </div>
+	  
+	<footer>
+	  <div class="main-content">
+		<p>This is special project for RedRover.SCHOOl </p>
+	
+		<p>Copyright ©2023 Timberhut. All rights reserved.</p>
+	  </footer>
+</div>
+
+<div class="overlay" id="overlay"></div>
+<div class="popup" id="popup">
+	<div class="popup-content">
+		<span class="close" onclick="hidePopup()">&times;</span>
+		<h2 class="coffee-name"></h2>
+		<p class="recipe"></p>
+		<p class="cost"></p>
+	</div>
+</div></p>
+
+<script src="coffeShop.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</div>
+</body>
+</html>

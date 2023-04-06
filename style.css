@@ -1,0 +1,686 @@
+body {
+  margin-top: align-item;
+  margin-top: 2rem;
+  background-color:rgb(245, 245, 220);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #696666a1;
+  z-index: 2;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding: 0px 20px;
+  margin-top: 0px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a{
+  color: #010000;
+  text-shadow: 0px 0px 8px #dedede;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Copperplate', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+  color: rgb(188, 117, 2);
+  text-shadow: #131313;
+}
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Copperplate', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 0px 0px 8px #fffafa;
+  margin-top: 15px;
+  margin-bottom: 10px;
+ 
+}
+h4 {
+  font-family: 'Copperplate', sans-serif;
+  text-align: left;
+  text-shadow: 0px 0px 8px #fffafa;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-left: 18px;
+}
+
+.main-blocks{
+  position:absolute;
+  left: 0%;
+  top: 15%;
+}
+
+.container {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  font-size: 18px;
+text-align: center;
+font-family: 'Copperplate', sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background-color:#fcfdfd; 
+}
+
+.container2 {
+  width: 100%;
+  font-size: 18px;
+text-align: center;
+font-family: 'Copperplate', sans-serif;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color:#fcfdfd; 
+}
+
+.container3 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  align-items: center; 
+  justify-content: center;
+  overflow:scroll;
+  font-size: 18px;
+text-align: center;
+font-family: 'Copperplate', sans-serif;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background-color:#fdffff; 
+}
+
+.coffee {
+  width: 300px;
+  height: 400px;
+  margin: 1rem;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px #ccc;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.coffee:hover {
+  transform: scale(1.1);
+}
+
+ .img1 { 
+  background-image: url(https://homeycomfort.com/wp-content/uploads/2019/04/espresso-2AWFEXJ.jpg);
+  background-size:cover;
+        width: auto;
+        margin: -66px 0 0 0px;
+        height: 100%;
+}
+
+.img2 { 
+  background-image: url(https://images.unsplash.com/photo-1600056781444-55f3b64235e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80);
+        background-size:cover;
+        width: auto;
+        margin: -66px 0 0 0px;
+        height: 100%;  
+}
+
+.img3 { 
+  background-image: url(https://blog.dktcdn.net/files/thanh-phan-ly-cafe-americano.jpg);
+        background-size:cover;
+        width: auto;
+        margin: -66px 0 0 0px;
+        height: 100%;  
+}
+
+.capputino-info{
+  position:relative;
+  top:0px;
+  height: 50px;
+  color: rgb(252, 248, 248);
+  background: rgba(175, 142, 35, 0.523);
+}
+
+.espresso-info{
+  position:relative;
+  top:0px;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  background: rgba(175, 142, 35, 0.523);
+}
+
+.americano-info{
+  position:relative;
+  top:0px;
+  height: 50px;
+  color: rgb(252, 248, 248);
+  background: rgba(175, 142, 35, 0.523);
+}
+
+.coffee .name  {
+  text-align: center;
+  font-family: 'Copperplate', sans-serif;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.coffee .price {
+  text-align: center;
+  font-family: 'Copperplate', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+.coffee .size {
+  display: flex;
+  font-size: 1.2rem;
+  font-family: 'Copperplate', sans-serif;
+  justify-content: center;
+  margin-top: 1rem;
+  background: rgba(175, 142, 35, 0.523);
+}
+
+.coffee .milk {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem 1rem;
+  font-family: 'Copperplate', sans-serif;
+  margin-top: 1rem;
+  background: rgba(175, 142, 35, 0.523);
+}
+
+.coffee .size .milk {
+  margin: 0 3rem;
+  font-size: 1.3rem;
+  font-family: 'Copperplate', sans-serif;
+}
+
+.coffee .btn {
+  display: block;
+  background: rgba(175, 142, 35, 0.523);
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  margin: 5%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(10, 10, 10, 0.7),flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center, flex;
+  font-family: 'Copperplate', sans-serif;
+  text-justify: auto;
+  border:#ccc;
+  box-shadow:#333;
+  }
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Copperplate', sans-serif;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #ccc;
+  padding: 1rem;
+}
+
+.popup-content h2 {
+  font-size: 2rem;
+  font-family: 'Copperplate', sans-serif;
+  margin-top: 1rem;
+}
+
+.popup-content p {
+  font-size: 1.5rem;
+  font-family: 'Copperplate', sans-serif;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.popup-content .recipe {
+  height: 50%;
+  position: flex;
+  margin-left: auto;
+  font-size: 1.2rem;
+  font-family: 'Copperplate', sans-serif;
+  margin-top: 1rem;
+  max-width: 40ch;
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  } 
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.popup-content .cost {
+font-size: 1.5rem;
+font-family: 'Copperplate', sans-serif;
+margin-top: 1rem;
+font-weight: bold;
+text-align: center;
+}
+
+.close {
+position: absolute;
+top: 0.5rem;
+right: 0.5rem;
+font-size: 1.5rem;
+color: #ccc;
+cursor: pointer;
+}
+
+.button {
+  display: block;
+  bottom: 0%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 10px 10px;
+  font-size: 18px;
+  font-family: 'Copperplate', sans-serif;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background: rgba(190, 152, 28, 0.804);
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 3px #9999996d;
+}
+
+#button-espresso {
+  margin: 11.5rem auto;
+}
+
+#button-americano {
+  margin: 7rem auto;
+}
+
+#button-cappuccino {
+  margin: 7rem auto;
+}
+
+.button:hover {background: rgb(211, 166, 16);}
+
+.button:active {
+  background-color: #d6a709c1;
+  box-shadow: 0 3px #5f5f60b6;
+  transform: translateY(2px);
+}
+
+.bg {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, rgb(145, 255, 0) 0%, rgb(254, 242, 15) 25%, rgb(217, 164, 19) 51%, #f12b74 100%);
+  -webkit-animation: AnimateBG 20s ease infinite;
+          animation: AnimateBG 20s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    justify-content: center;
+  }
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: calc(33.33% - 15px);
+  margin-bottom: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  background-color:white;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  margin-top: 15px;
+  width: 25vw;
+  height: vh;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.card-content {
+
+  background-color:white;
+  padding: 10px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  height: 100%;
+  font-size: 16px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 50%;
+  padding: 0px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: rgb(0, 64, 255);
+}
+
+section {
+  position: relative;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('img/parallax.jpg') center center/cover no-repeat fixed;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 30px ;
+  margin-bottom: 0px ;
+  padding-left: 0px;
+}
+
+ul li {
+  position:center;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+.container4 {
+  display: block;
+  text-align:  center;
+  background-color: #f5f5f5;
+  padding-bottom: 15px;
+}
+
+.container4 h2 {
+  text-align:  center;
+  font-family: 'Copperplate', sans-serif;
+  margin-bottom: 10px;
+}
+.social-icon {
+  padding-top: 5px;
+  padding-bottom: 0px;
+  margin-top: 5rem;
+  margin-bottom: 10px;
+  margin: 0px 10px;
+}
+.footer {
+  display: block; 
+  background-color:rgba(0, 0, 0, 0.1)
+}
+.card-content{
+  margin: 0px;
+  padding: 0 auto;
+  ;
+}
+section h3 {
+  margin: 1px;
+  padding: 0 auto;
+}
+p {
+  margin-left: 5px;
+}
+
+/* ========================================= */
+
+.header-footer {
+  background: #e1e1e1;
+}
+.main-content-footer {
+  height: 10vh; 
+}
+footer {
+  color: white;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+section {
+  display: flex;
+  justify-content:top;
+  align-items:top;
+}
+section:nth-child(2) {
+  color: #42455a;
+  background: #e0ffff;
+}
+section:nth-child(3){
+  color: #e0ffff;
+}
+section:nth-child(4){
+  color: #42455a;
+  background: #e0ffff;
+}
+
+section h1{
+  font-size: 3rem;
+  margin: 20px;
+}
+
+section h2{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+    section .text-container{
+      width: 100%;
+      padding-left: 10%;
+      margin-right: 10%;
+       display: flex;
+       margin-top: 1px;
+       justify-content: space-between ;
+    }
+    section .text-container .text-box{
+      width: 270px;
+      
+      margin: 5px;
+      padding: 20px;
+      background: #fbfbfbe4;
+    }
+    section .text-container .text-box h3{
+      font-size: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    
+    @media (max-width: 900px){
+      section h1{
+        font-size: 2rem;
+        text-align: center;
+      }
+      section .text-container{
+        flex-direction: column;
+      }
+    }
+    
+.reveal{
+  position: relative;
+  font-family: 'Copperplate', sans-serif;
+  font-size: 19px;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+    
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.notic {
+  font-size: 30;
+  padding: 30px;
+}
+
+input[type="radio"] {
+  accent-color: rgb(227, 139, 15); 
+} 
+/* input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: px solid white;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffa500;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+   */
+
+
+
