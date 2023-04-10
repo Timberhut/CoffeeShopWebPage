@@ -301,6 +301,9 @@ h4 {
 }
 
 .popup {
+  z-index: 10;
+  width: 80%;
+  height: auto;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -343,11 +346,10 @@ h4 {
 .popup-content .recipe {
   height: 50%;
   position: flex;
-  margin-left: auto;
   font-size: 1.2rem;
   font-family: 'Copperplate', sans-serif;
   margin-top: 1rem;
-  max-width: 40ch;
+  max-width: 60ch;
   text-align: center;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
