@@ -44,7 +44,7 @@ function getCostEsp(coffee) {
 function showPopup(name, cost) {
   let recipe = ""
   if (name == "Espresso") {
-   recipe = `Recipe: \n 
+   recipe = `Recipe:\n 
    1. Grind your coffee.\n 
    2. Boil Water.\n 
    3. Add the coffee grounds into the press.\n 
